@@ -45,7 +45,20 @@ function calculateCurrency(){
         //to the exchange rate for each country
         //USE THE TABLE PROVIDED FOR VALUES!!!
         var AUD = 1.40885; //exchange rate for Austrialian Dollar
-        var AWG = 1.78511;
+        var AWG = 1.78511; // exchange rate for Aruban Florin
+        var BSD = 1.0000; //exchange rate for Bahamian Dollar
+        var XBT = 0.00015; //exchange rate for Bitcoin
+        var GPB = 0.76826; //exchange rate for BRITISH POUND
+        var CAD = 1.30976; //exchange rate for CANADIAN DOLLAR
+        var CLP = 683.205; //exchange rate for CHILEAN PESSO
+        var CNY = 6.93780; //exchange rate forCHINESE YUAN RENMINIBI
+        var CUP = 25.0000; //exchange rate for CUBAN PESO
+        var DKK = 6.49079; //exchange rate for DANISH KRONE
+        var EUR = 0.870075; //exchange rate for EURO
+        var EGP = 17.8726; //exchange rate for EGYPTIAN POUND
+        var HKD = 7.83955; //exchange rate for HONG KONG DOLLAR
+        var IRR = 42000; //exchange rate for IRANIAN RIAL
+        var NGN = 361.969; //exchange rate for NIGERIAN NAIRA
 
          
          
@@ -79,13 +92,67 @@ function calculateCurrency(){
          
          //Calculate the exchange rate and set the country prefix using a selection statement
 
-
-
-
-
-
-
-
+                if ( country == 0 ){
+            
+            exchangeRate = usdAmount * AUD;
+            countryName = "AUD";
+            
+            }else if (country == 1){
+                exchangeRate = usdAmount * AWG;
+                countryName = "AWG";
+                }
+            else if (country == 2){
+                exchangeRate = usdAmount * BSD;
+                countryName = "BSD";
+                }
+            else if (country == 3){
+                exchangeRate = usdAmount * XBT;
+                countryName = "XBT";
+                }
+            else if (country == 4){
+                exchangeRate = usdAmount * GPB;
+                countryName = "GPB";
+                }
+            else if (country == 5){
+                exchangeRate = usdAmount * CAD;
+                countryName = "CAD";
+                }
+            else if (country == 6){
+                exchangeRate = usdAmount * CLP;
+                countryName = "CLP";
+                }
+            else if (country == 7){
+                exchangeRate = usdAmount * CNY;
+                countryName = "CNY";
+                }
+            else if (country == 8){
+                exchangeRate = usdAmount * CUP;
+                countryName = "CUP";
+                }
+            else if (country == 9){
+                exchangeRate = usdAmount * DKK;
+                countryName = "DKK";
+                 }
+            else if (country == 10){
+                exchangeRate = usdAmount * EUR;
+                countryName = "EUR";
+                }
+            else if (country == 11){
+                exchangeRate = usdAmount * EGP;
+                countryName = "EGP";
+                }
+            else if (country == 12){
+                exchangeRate = usdAmount * HKD;
+                countryName = "HKD";
+                 }
+            else if (country == 13){
+                exchangeRate = usdAmount * IRR;
+                countryName = "IRR";
+                }
+            else if (country == 14){
+                exchangeRate = usdAmount * NGN;
+                countryName = "NGN";
+                }
 
           
         /**********************************************************************************************
@@ -103,9 +170,7 @@ function calculateCurrency(){
         ***********************************************************************************************/                                                                                                               
 
 
-
-
-
+    document.getElementById("currencyExchangeInfo").innerHTML = ("Selling $" + ("$%.2f " , usdAmount) + " USD ====> Buys $" + ("$%.2f"  , exchangeRate) + " " + countryName);
 
 
       
@@ -144,12 +209,14 @@ function clearButton () {
         document.getElementById("country").selectedIndex = 0;
         
         
-        
         //Remove the text from the textfield
+        document.getElementById("usdAmount").value = "";
         
         
         
         //Remove the currency exchange information from the document where the id is: "currencyExchangeInfo"
 
+        document.getElementById("currencyExchangeInfo").innerHTML = "";
+        document.getElementById("currencyExchangeInfo").value = "";
 
 }//end of clearButton function

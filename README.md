@@ -4,20 +4,23 @@
 Web Application Development
 
 ### Assignment Date:  
-(Month Day, Year)
+(November 1, 2018)
 
 ### Student Name:  
-(First and Last Name)
+(Angela Ging)
 
 ### Project Description:
-(In your own words, briefly describe the assignment.)
+(This assignment asks you to build a calculator behind the scenes of a front facing webpage.
+This assignment asks for you to utilize a if/else statement in order for the users country
+choice to correctly populate. It also asks you to clear the statements and webpage, which
+is beneficial to any webpage or program you are building. You also have to push your 
+assignment to GitHub, which helped me understand more about how to push out data to an outside source.)
 
 ### View Project:
-(Replace this statement with your Github Page URL that was created when you 
- published the project.)
+(https://angelaging.github.io/lesson5_javascript2/)
 
 ### Lessons Learned in the Assignment:
-1. (Briefly describe a lesson/concept learned in this lesson.)
-2. (Briefly describe a lesson/concept learned in this lesson.)
-3. (Briefly describe a lesson/concept learned in this lesson.)
+1. (I learned how to properly define variables using 'var'.)
+2. (I learned how to properly execute an if/else statement and trouble shoot when it was not working properly.)
+3. (I learned how to clear any data imported or inputed by a user in order for the user to ask for another calculation.)
 
